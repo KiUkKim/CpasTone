@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kugaapplication/page/BusTable.dart';
 
 class MainPageWidget extends StatefulWidget {
   const MainPageWidget({Key? key}) : super(key: key);
@@ -72,27 +73,36 @@ class _MainPageWidgetState extends State<MainPageWidget> {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset(
-                  'assets/images/chamisari.png',
-                  width: 70,
-                  height: 70,
-                  fit: BoxFit.cover,
-                ),
+                IconButton(
+                  onPressed: (){
+                    Navigator.push(context , MaterialPageRoute(builder: (_) => BusTableWidget()));
+                  }, 
+                  icon: Image.asset('assets/images/chamisari.png'),
+                  iconSize: 80,
+                  ),
+                // Image.asset(
+                //   'assets/images/chamisari.png',
+                //   width: 70,
+                //   height: 70,
+                //   fit: BoxFit.cover,
+                // ),
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(50, 0, 50, 0),
-                  child: Image.asset(
-                    'assets/images/daro.png',
-                    width: 70,
-                    height: 70,
-                    fit: BoxFit.cover,
-                  ),
+                  child: IconButton(onPressed: (){}, icon: Image.asset('assets/images/daro.png'), iconSize: 80,), 
+                  // Image.asset(
+                  //   'assets/images/daro.png',
+                  //   width: 70,
+                  //   height: 70,
+                  //   fit: BoxFit.cover,
+                  // ),
                 ),
-                Image.asset(
-                  'assets/images/puparper.png',
-                  width: 70,
-                  height: 70,
-                  fit: BoxFit.cover,
-                ),
+                IconButton(onPressed: (){}, icon: Image.asset('assets/images/puparper.png'), iconSize: 80,),
+                // Image.asset(
+                //   'assets/images/puparper.png',
+                //   width: 70,
+                //   height: 70,
+                //   fit: BoxFit.cover,
+                // ),
               ],
             ),
           ),
@@ -126,27 +136,31 @@ class _MainPageWidgetState extends State<MainPageWidget> {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset(
-                  'assets/images/mumu.png',
-                  width: 70,
-                  height: 70,
-                  fit: BoxFit.cover,
-                ),
+                IconButton(onPressed: (){}, icon: Image.asset('assets/images/mumu.png'), iconSize: 80,),
+                // Image.asset(
+                //   'assets/images/mumu.png',
+                //   width: 70,
+                //   height: 70,
+                //   fit: BoxFit.cover,
+                // ),
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(50, 0, 50, 0),
-                  child: Image.asset(
-                    'assets/images/anam.png',
-                    width: 70,
-                    height: 70,
-                    fit: BoxFit.cover,
-                  ),
+                  child:
+                  IconButton(onPressed: (){}, icon: Image.asset('assets/images/anam.png'), iconSize: 80,), 
+                  // Image.asset(
+                  //   'assets/images/anam.png',
+                  //   width: 70,
+                  //   height: 70,
+                  //   fit: BoxFit.cover,
+                  // ),
                 ),
-                Image.asset(
-                  'assets/images/kui.png',
-                  width: 70,
-                  height: 100,
-                  fit: BoxFit.cover,
-                ),
+                IconButton(onPressed: (){}, icon: Image.asset('assets/images/kui.png'), iconSize: 80,),
+                // Image.asset(
+                //   'assets/images/kui.png',
+                //   width: 70,
+                //   height: 100,
+                //   fit: BoxFit.cover,
+                // ),
               ],
             ),
           ),
